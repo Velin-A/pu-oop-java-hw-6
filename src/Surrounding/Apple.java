@@ -1,27 +1,16 @@
+package Surrounding;
+
 import java.awt.*;
 
-public class Pixel{
-
+public class Apple extends Surrounding{
     public static final int PIXEL_SIZE = 30;
     public static final int BORDER_OFFSET = 1;
-    private int row;
-    private int col;
-    private Color color;
-
-    /*
-        Constructor for Tile
-        @param row row coordinate
-        @param col col coordinate
-        @param color tile color
-     */
-    public Pixel(int row, int col, Color color){
-        this.row      = row;
-        this.col      = col;
-        this.color    = color;
+    public Apple (int row, int col, Color color){
+        this.row   = row;
+        this.col   = col;
+        this.color = color;
     }
-    /*
-        Method rendering the tiles
-     */
+
     public void render(Graphics g){
 
         int tileX    = this.col * PIXEL_SIZE;
@@ -32,4 +21,7 @@ public class Pixel{
         g.fillRect(tileX, tileY, PIXEL_SIZE-BORDER_OFFSET,  PIXEL_SIZE-BORDER_OFFSET);
     }
 
+    public boolean canGoTrough(){
+        return true;
+    }
 }
