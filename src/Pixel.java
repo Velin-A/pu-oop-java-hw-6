@@ -9,7 +9,7 @@ public class Pixel{
     private Color color;
 
     /*
-        Constructor for Tile
+        Constructor for Pixels
         @param row row coordinate
         @param col col coordinate
         @param color tile color
@@ -28,7 +28,6 @@ public class Pixel{
         int tileY    = this.row * PIXEL_SIZE;
 
         g.setColor(this.color);
-        //g.drawRect(tileX, tileY, PIXEL_SIZE-BORDER_OFFSET,  PIXEL_SIZE-BORDER_OFFSET);
         g.fillRect(tileX, tileY, PIXEL_SIZE-BORDER_OFFSET,  PIXEL_SIZE-BORDER_OFFSET);
     }
 

@@ -7,7 +7,7 @@ import java.awt.*;
 public class Snake extends Surrounding {
 
     /*
-        Constructor for GPS
+        Constructor for the Snake
         @param row row coordinate
         @param col col coordinate
         @param color for GPS
@@ -27,4 +27,6 @@ public class Snake extends Surrounding {
 
         return rowCoefficient == 1 || colCoefficient == 1;
     }
+
+    //public void move()
 }

@@ -9,10 +9,16 @@ public class Surrounding {
     protected Color color;
     protected int size = 30;
 
+    /*
+        Row getter
+     */
     public int getRow() {
         return row;
     }
 
+    /*
+        Col getter
+     */
     public int getCol() {
         return col;
     }
